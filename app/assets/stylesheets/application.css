@@ -11,3 +11,46 @@
  *= require_self
  *= require_tree .
  */
+ul {
+	list-style: none;
+	padding: 0 5%;
+}
+
+
+.container {
+	width: 75%;
+	margin: 0 auto;
+	border-left: 1px dotted black;
+	border-right: 1px dotted black;
+}
+
+.title {
+	
+	font-size: large;
+	font-weight: bold;
+	border-bottom: 1px dotted black;
+}
+
+.content {
+	margin: 2%;
+}
+
+.comment {
+	border: 1px dotted black;
+	padding: 1%;
+}
+
+.comment-count {
+	border-bottom: 1px dotted black;
+	text-align: right;
+}
+
+.time {
+	font-size: small;
+	color: blue;
+}
+
+.site-title {
+	color: grey;
+	font-weight: bold;
+}

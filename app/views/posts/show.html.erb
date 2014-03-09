@@ -1,0 +1,15 @@
+<div class="container">
+	<%= link_to "Home", posts_path%>
+	<h2 class="title"><%= @post.title %></h2>
+	<p class="content"><%= @post.content %></p>
+	<%= link_to "Add Comment", new_comment_path%>
+
+	<h3>Comments: </h3>
+	<ul class="list-coments">
+		<% @post.comments.each do |comment| %>
+			<li class="comment"><%=comment.content%> -- <span class="time"><%=comment.created_at%></span></li>
+		<%end%>
+	</ul>
+
+	<% session[:post_id] = @post.id %>
+</div>
