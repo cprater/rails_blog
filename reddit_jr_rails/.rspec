@@ -1,0 +1,1 @@
+echo "--color --format documentation" > ~/.rspec--color

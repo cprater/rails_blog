@@ -1,0 +1,12 @@
+<div class="container">
+	<h1 class="site-title">Anon Blog</h1>
+	<%=link_to "Create Post", new_post_path%>	
+
+	<ul>
+		<% @posts.each do |post| %>
+			<li class="title"><%=link_to post.title, post_path(post.id) %> </li>
+			<li class="content"><%= post.content %></li>
+			<li class="comment-count"> -- <%= post.comments.length %> Comments</li><br>
+		<%end%>
+	</ul>
+</div>
